@@ -14,6 +14,14 @@ namespace dotnetprojet
     {
         public SpouseName()
         {
+            if (Inscription2.user.status==0)
+            {
+                this.Hide();
+                MainMenu m = new MainMenu();
+                m.Show();
+
+
+            }
             InitializeComponent();
         }
 
@@ -31,7 +39,18 @@ namespace dotnetprojet
 
         private void next_Click(object sender, EventArgs e)
         {
-            MainMenu m= new MainMenu();
+            Person spouse = new Person();
+            spouse.personName = spouseNametxt.Text;
+            spouse.jobstudylevel = spouseJobTxt.Text;
+            spouse.schedule = spouseschedule.Text;
+            // to do
+            // add type col to database 
+            spouse.type = "partner";
+
+            Inscription1.projectdb.Person.InsertOnSubmit(spouse);
+            Inscription1.projectdb.SubmitChanges();
+
+            MainMenu m = new MainMenu();
             m.Show();
             this.Hide();
         }

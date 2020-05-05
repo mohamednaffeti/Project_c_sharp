@@ -112,3 +112,54 @@ C:\Users\mohamed\Desktop\Nouveau dossier\derniere version dotnetprojet\dotnetpro
 C:\Users\mohamed\Desktop\Nouveau dossier\derniere version dotnetprojet\dotnetprojet\obj\Debug\dotnetprojet.csproj.CopyComplete
 C:\Users\mohamed\Desktop\Nouveau dossier\derniere version dotnetprojet\dotnetprojet\obj\Debug\dotnetprojet.exe
 C:\Users\mohamed\Desktop\Nouveau dossier\derniere version dotnetprojet\dotnetprojet\obj\Debug\dotnetprojet.pdb
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\bin\Debug\dotnetprojet.exe.config
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\bin\Debug\dotnetprojet.exe
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\bin\Debug\dotnetprojet.pdb
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\bin\Debug\EntityFramework.dll
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\bin\Debug\EntityFramework.xml
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.csprojAssemblyReference.cache
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.PremierPage.resources
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.SpouseName.resources
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.Parent.resources
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.MainMenu.resources
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.Connexion.resources
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.Inscription1.resources
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.Inscription2.resources
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.statistics.resources
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.Properties.Resources.resources
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.Setting1.resources
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.Tasks.resources
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.csproj.GenerateResource.cache
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.csproj.CopyComplete
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.exe
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.pdb
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.ChildrenForm.resources
+C:\Users\dwaynes\Source\Repos\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.ChildrenF1.resources
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\bin\Debug\dotnetprojet.exe.config
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\bin\Debug\dotnetprojet.exe
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\bin\Debug\dotnetprojet.pdb
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\bin\Debug\EntityFramework.dll
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\bin\Debug\EntityFramework.xml
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.csprojAssemblyReference.cache
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.ChildrenForm.resources
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.PremierPage.resources
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.ChildrenF1.resources
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.SpouseName.resources
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.Parent.resources
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.MainMenu.resources
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.Connexion.resources
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.Inscription1.resources
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.Inscription2.resources
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.statistics.resources
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.Properties.Resources.resources
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.Setting1.resources
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.Tasks.resources
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.csproj.GenerateResource.cache
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.csproj.CoreCompileInputs.cache
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.csproj.CopyComplete
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.exe
+C:\Users\mohamed\Desktop\Nouveau dossier (2)\Nouveau dossier\Project_c_sharp\dotnetprojet\obj\Debug\dotnetprojet.pdb

@@ -38,13 +38,18 @@ namespace dotnetprojet
 
         private void next_Click(object sender, EventArgs e)
         {
-            ins2 = new Inscription2();
+           /* ins2 = new Inscription2();
             ins2.lastname = firstname.Text;
             ins2.lastname = lastname.Text;
             ins2.email = email.Text;
             ins2.password = password.Text;
-            ins2.ShowDialog();
-            Inscription2 p2 = new Inscription2();
+            ins2.ShowDialog(); */
+            Inscription2 p2 = new Inscription2(firstname.Text, lastname.Text,password.Text, email.Text);
+            /*p2.firstname = firstname.Text;
+            p2.lastname = lastname.Text;
+            p2.email = email.Text;
+            p2.password = password.Text;*/
+
             p2.Show();
             this.Hide();
         }

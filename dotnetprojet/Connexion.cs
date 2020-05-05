@@ -36,9 +36,28 @@ namespace dotnetprojet
 
         private void next_Click(object sender, EventArgs e)
         {
-            MainMenu p1 = new MainMenu();
-            p1.Show();
-            this.Hide();
+            
+            try
+            {
+               var user = Inscription1.projectdb.Users.Where(p => p.email == email.Text && p.password == password.Text).Single();
+
+
+
+                if (user!=null)
+            {
+                MainMenu p1 = new MainMenu();
+                p1.Show();
+                this.Hide();
+            }
+            
+                }catch(Exception)
+            {
+                MessageBox.Show("email et passe incorrect");
+            }
+
+
+            
+
         }
     }
 }

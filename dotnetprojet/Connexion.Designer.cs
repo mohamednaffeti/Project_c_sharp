@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Connexion));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.email = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.Facebook = new Bunifu.Framework.UI.BunifuImageButton();
             this.Gmail = new Bunifu.Framework.UI.BunifuImageButton();
             this.next = new Bunifu.Framework.UI.BunifuImageButton();
             this.pred = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.password = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Facebook)).BeginInit();
@@ -49,8 +49,8 @@
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.bunifuMaterialTextbox2);
-            this.panel1.Controls.Add(this.bunifuMaterialTextbox1);
+            this.panel1.Controls.Add(this.password);
+            this.panel1.Controls.Add(this.email);
             this.panel1.Controls.Add(this.bunifuCustomLabel2);
             this.panel1.Controls.Add(this.bunifuImageButton2);
             this.panel1.Controls.Add(this.Facebook);
@@ -59,6 +59,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(357, 447);
             this.panel1.TabIndex = 14;
+            // 
+            // email
+            // 
+            this.email.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.email.ForeColor = System.Drawing.Color.SeaGreen;
+            this.email.HintForeColor = System.Drawing.Color.SeaGreen;
+            this.email.HintText = "Email";
+            this.email.isPassword = false;
+            this.email.LineFocusedColor = System.Drawing.Color.SeaGreen;
+            this.email.LineIdleColor = System.Drawing.Color.SeaGreen;
+            this.email.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
+            this.email.LineThickness = 3;
+            this.email.Location = new System.Drawing.Point(23, 133);
+            this.email.Margin = new System.Windows.Forms.Padding(4);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(309, 44);
+            this.email.TabIndex = 43;
+            this.email.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuCustomLabel2
             // 
@@ -145,43 +164,24 @@
             this.pred.Zoom = 10;
             this.pred.Click += new System.EventHandler(this.pred_Click);
             // 
-            // bunifuMaterialTextbox1
+            // password
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox1.HintText = "Email";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(23, 133);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(309, 44);
-            this.bunifuMaterialTextbox1.TabIndex = 43;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuMaterialTextbox2
-            // 
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox2.HintText = "Password";
-            this.bunifuMaterialTextbox2.isPassword = true;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox2.LineThickness = 3;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(23, 213);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(309, 44);
-            this.bunifuMaterialTextbox2.TabIndex = 44;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.password.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.password.ForeColor = System.Drawing.Color.SeaGreen;
+            this.password.HintForeColor = System.Drawing.Color.SeaGreen;
+            this.password.HintText = "Password";
+            this.password.isPassword = false;
+            this.password.LineFocusedColor = System.Drawing.Color.SeaGreen;
+            this.password.LineIdleColor = System.Drawing.Color.SeaGreen;
+            this.password.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
+            this.password.LineThickness = 3;
+            this.password.Location = new System.Drawing.Point(17, 214);
+            this.password.Margin = new System.Windows.Forms.Padding(4);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(315, 44);
+            this.password.TabIndex = 45;
+            this.password.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Connexion
             // 
@@ -216,7 +216,7 @@
         private Bunifu.Framework.UI.BunifuImageButton next;
         private Bunifu.Framework.UI.BunifuImageButton pred;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox email;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox password;
     }
 }

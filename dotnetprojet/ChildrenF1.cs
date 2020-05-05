@@ -10,9 +10,12 @@ using System.Windows.Forms;
 
 namespace dotnetprojet
 {
-    public partial class Children : Form
+    public partial class ChildrenF1 : Form
     {
-       // public Children() => InitializeComponent();
+        public ChildrenF1()
+        {
+            InitializeComponent();
+        }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
@@ -61,6 +64,11 @@ namespace dotnetprojet
             Parent p = new Parent();
             p.Show();
             this.Hide();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

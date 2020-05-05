@@ -33,8 +33,11 @@
             this.pred = new Bunifu.Framework.UI.BunifuImageButton();
             this.next = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.mother = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.father = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.nbrchild = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuProgressBar1 = new Bunifu.Framework.UI.BunifuProgressBar();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -52,10 +55,7 @@
             this.male = new Bunifu.Framework.UI.BunifuCheckbox();
             this.female = new Bunifu.Framework.UI.BunifuCheckbox();
             this.datebirth = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.father = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.mother = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.userschedule = new System.Windows.Forms.TextBox();
             bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pred)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.next)).BeginInit();
@@ -110,12 +110,12 @@
             // panel2
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.Controls.Add(this.userschedule);
             this.panel2.Controls.Add(this.mother);
             this.panel2.Controls.Add(this.father);
             this.panel2.Controls.Add(this.bunifuCustomLabel11);
             this.panel2.Controls.Add(this.bunifuCustomLabel8);
             this.panel2.Controls.Add(this.nbrchild);
-            this.panel2.Controls.Add(this.bunifuProgressBar1);
             this.panel2.Controls.Add(bunifuCustomLabel6);
             this.panel2.Controls.Add(this.bunifuCustomLabel5);
             this.panel2.Controls.Add(this.bunifuCustomLabel1);
@@ -127,6 +127,53 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(357, 447);
             this.panel2.TabIndex = 21;
+            // 
+            // mother
+            // 
+            this.mother.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.mother.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.mother.Checked = false;
+            this.mother.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.mother.ForeColor = System.Drawing.Color.White;
+            this.mother.Location = new System.Drawing.Point(176, 270);
+            this.mother.Name = "mother";
+            this.mother.Size = new System.Drawing.Size(20, 20);
+            this.mother.TabIndex = 47;
+            // 
+            // father
+            // 
+            this.father.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.father.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.father.Checked = false;
+            this.father.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.father.ForeColor = System.Drawing.Color.White;
+            this.father.Location = new System.Drawing.Point(176, 231);
+            this.father.Name = "father";
+            this.father.Size = new System.Drawing.Size(20, 20);
+            this.father.TabIndex = 43;
+            // 
+            // bunifuCustomLabel11
+            // 
+            this.bunifuCustomLabel11.AllowDrop = true;
+            this.bunifuCustomLabel11.AutoSize = true;
+            this.bunifuCustomLabel11.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel11.ForeColor = System.Drawing.Color.Green;
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(45, 277);
+            this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
+            this.bunifuCustomLabel11.Size = new System.Drawing.Size(40, 13);
+            this.bunifuCustomLabel11.TabIndex = 43;
+            this.bunifuCustomLabel11.Text = "Mother";
+            // 
+            // bunifuCustomLabel8
+            // 
+            this.bunifuCustomLabel8.AutoSize = true;
+            this.bunifuCustomLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel8.ForeColor = System.Drawing.Color.Green;
+            this.bunifuCustomLabel8.Location = new System.Drawing.Point(45, 231);
+            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
+            this.bunifuCustomLabel8.Size = new System.Drawing.Size(34, 13);
+            this.bunifuCustomLabel8.TabIndex = 43;
+            this.bunifuCustomLabel8.Text = "father";
             // 
             // nbrchild
             // 
@@ -146,19 +193,6 @@
             this.nbrchild.Size = new System.Drawing.Size(191, 44);
             this.nbrchild.TabIndex = 46;
             this.nbrchild.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuProgressBar1
-            // 
-            this.bunifuProgressBar1.BackColor = System.Drawing.Color.Silver;
-            this.bunifuProgressBar1.BorderRadius = 5;
-            this.bunifuProgressBar1.Location = new System.Drawing.Point(39, 51);
-            this.bunifuProgressBar1.MaximumValue = 100;
-            this.bunifuProgressBar1.Name = "bunifuProgressBar1";
-            this.bunifuProgressBar1.ProgressColor = System.Drawing.Color.Teal;
-            this.bunifuProgressBar1.Size = new System.Drawing.Size(250, 116);
-            this.bunifuProgressBar1.TabIndex = 42;
-            this.bunifuProgressBar1.Value = 0;
-            this.bunifuProgressBar1.progressChanged += new System.EventHandler(this.bunifuProgressBar1_progressChanged);
             // 
             // bunifuCustomLabel5
             // 
@@ -218,6 +252,7 @@
             this.married.Name = "married";
             this.married.Size = new System.Drawing.Size(20, 20);
             this.married.TabIndex = 42;
+            this.married.OnChange += new System.EventHandler(this.married_OnChange);
             // 
             // single
             // 
@@ -231,6 +266,7 @@
             this.single.Name = "single";
             this.single.Size = new System.Drawing.Size(20, 20);
             this.single.TabIndex = 41;
+            this.single.OnChange += new System.EventHandler(this.single_OnChange);
             // 
             // panel1
             // 
@@ -362,6 +398,7 @@
             this.male.Name = "male";
             this.male.Size = new System.Drawing.Size(20, 20);
             this.male.TabIndex = 6;
+            this.male.OnChange += new System.EventHandler(this.male_OnChange);
             // 
             // female
             // 
@@ -374,6 +411,7 @@
             this.female.Name = "female";
             this.female.Size = new System.Drawing.Size(20, 20);
             this.female.TabIndex = 5;
+            this.female.OnChange += new System.EventHandler(this.female_OnChange);
             // 
             // datebirth
             // 
@@ -389,52 +427,13 @@
             this.datebirth.Value = new System.DateTime(2020, 3, 10, 14, 7, 11, 581);
             this.datebirth.onValueChanged += new System.EventHandler(this.bunifuDatepicker1_onValueChanged);
             // 
-            // bunifuCustomLabel8
+            // userschedule
             // 
-            this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel8.ForeColor = System.Drawing.Color.Green;
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(45, 231);
-            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(34, 13);
-            this.bunifuCustomLabel8.TabIndex = 43;
-            this.bunifuCustomLabel8.Text = "father";
-            // 
-            // bunifuCustomLabel11
-            // 
-            this.bunifuCustomLabel11.AllowDrop = true;
-            this.bunifuCustomLabel11.AutoSize = true;
-            this.bunifuCustomLabel11.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel11.ForeColor = System.Drawing.Color.Green;
-            this.bunifuCustomLabel11.Location = new System.Drawing.Point(45, 277);
-            this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
-            this.bunifuCustomLabel11.Size = new System.Drawing.Size(40, 13);
-            this.bunifuCustomLabel11.TabIndex = 43;
-            this.bunifuCustomLabel11.Text = "Mother";
-            // 
-            // father
-            // 
-            this.father.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.father.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.father.Checked = false;
-            this.father.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.father.ForeColor = System.Drawing.Color.White;
-            this.father.Location = new System.Drawing.Point(176, 231);
-            this.father.Name = "father";
-            this.father.Size = new System.Drawing.Size(20, 20);
-            this.father.TabIndex = 43;
-            // 
-            // mother
-            // 
-            this.mother.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.mother.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.mother.Checked = false;
-            this.mother.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.mother.ForeColor = System.Drawing.Color.White;
-            this.mother.Location = new System.Drawing.Point(176, 270);
-            this.mother.Name = "mother";
-            this.mother.Size = new System.Drawing.Size(20, 20);
-            this.mother.TabIndex = 47;
+            this.userschedule.Location = new System.Drawing.Point(24, 51);
+            this.userschedule.Multiline = true;
+            this.userschedule.Name = "userschedule";
+            this.userschedule.Size = new System.Drawing.Size(262, 116);
+            this.userschedule.TabIndex = 48;
             // 
             // Inscription2
             // 
@@ -482,7 +481,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
         private Bunifu.Framework.UI.BunifuCheckbox married;
         private Bunifu.Framework.UI.BunifuCheckbox single;
-        private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox nbrchild;
         private Bunifu.Framework.UI.BunifuMaterialTextbox job;
         private Bunifu.Framework.UI.BunifuMaterialTextbox adresse;
@@ -490,5 +488,6 @@
         private Bunifu.Framework.UI.BunifuCheckbox father;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel11;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
+        private System.Windows.Forms.TextBox userschedule;
     }
 }

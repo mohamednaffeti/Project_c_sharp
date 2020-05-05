@@ -32,10 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SpouseName));
             this.next = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuProgressBar1 = new Bunifu.Framework.UI.BunifuProgressBar();
+            this.spouseJobTxt = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.spouseNametxt = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.pred = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.spouseschedule = new System.Windows.Forms.TextBox();
             bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.next)).BeginInit();
             this.panel1.SuspendLayout();
@@ -48,7 +48,7 @@
             bunifuCustomLabel6.BackColor = System.Drawing.Color.Transparent;
             bunifuCustomLabel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             bunifuCustomLabel6.ForeColor = System.Drawing.Color.Teal;
-            bunifuCustomLabel6.Location = new System.Drawing.Point(56, 248);
+            bunifuCustomLabel6.Location = new System.Drawing.Point(23, 209);
             bunifuCustomLabel6.Name = "bunifuCustomLabel6";
             bunifuCustomLabel6.Size = new System.Drawing.Size(107, 15);
             bunifuCustomLabel6.TabIndex = 43;
@@ -72,26 +72,52 @@
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.bunifuMaterialTextbox2);
-            this.panel1.Controls.Add(this.bunifuMaterialTextbox1);
-            this.panel1.Controls.Add(this.bunifuProgressBar1);
+            this.panel1.Controls.Add(this.spouseschedule);
+            this.panel1.Controls.Add(this.spouseJobTxt);
+            this.panel1.Controls.Add(this.spouseNametxt);
             this.panel1.Controls.Add(bunifuCustomLabel6);
             this.panel1.Location = new System.Drawing.Point(249, 68);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(357, 447);
             this.panel1.TabIndex = 14;
             // 
-            // bunifuProgressBar1
+            // spouseJobTxt
             // 
-            this.bunifuProgressBar1.BackColor = System.Drawing.Color.Silver;
-            this.bunifuProgressBar1.BorderRadius = 5;
-            this.bunifuProgressBar1.Location = new System.Drawing.Point(56, 302);
-            this.bunifuProgressBar1.MaximumValue = 100;
-            this.bunifuProgressBar1.Name = "bunifuProgressBar1";
-            this.bunifuProgressBar1.ProgressColor = System.Drawing.Color.Teal;
-            this.bunifuProgressBar1.Size = new System.Drawing.Size(250, 116);
-            this.bunifuProgressBar1.TabIndex = 44;
-            this.bunifuProgressBar1.Value = 0;
+            this.spouseJobTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.spouseJobTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.spouseJobTxt.ForeColor = System.Drawing.Color.SeaGreen;
+            this.spouseJobTxt.HintForeColor = System.Drawing.Color.SeaGreen;
+            this.spouseJobTxt.HintText = "Job";
+            this.spouseJobTxt.isPassword = false;
+            this.spouseJobTxt.LineFocusedColor = System.Drawing.Color.SeaGreen;
+            this.spouseJobTxt.LineIdleColor = System.Drawing.Color.SeaGreen;
+            this.spouseJobTxt.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
+            this.spouseJobTxt.LineThickness = 3;
+            this.spouseJobTxt.Location = new System.Drawing.Point(23, 144);
+            this.spouseJobTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.spouseJobTxt.Name = "spouseJobTxt";
+            this.spouseJobTxt.Size = new System.Drawing.Size(318, 44);
+            this.spouseJobTxt.TabIndex = 46;
+            this.spouseJobTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // spouseNametxt
+            // 
+            this.spouseNametxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.spouseNametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.spouseNametxt.ForeColor = System.Drawing.Color.SeaGreen;
+            this.spouseNametxt.HintForeColor = System.Drawing.Color.SeaGreen;
+            this.spouseNametxt.HintText = "Partner Name";
+            this.spouseNametxt.isPassword = false;
+            this.spouseNametxt.LineFocusedColor = System.Drawing.Color.SeaGreen;
+            this.spouseNametxt.LineIdleColor = System.Drawing.Color.SeaGreen;
+            this.spouseNametxt.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
+            this.spouseNametxt.LineThickness = 3;
+            this.spouseNametxt.Location = new System.Drawing.Point(23, 63);
+            this.spouseNametxt.Margin = new System.Windows.Forms.Padding(4);
+            this.spouseNametxt.Name = "spouseNametxt";
+            this.spouseNametxt.Size = new System.Drawing.Size(318, 44);
+            this.spouseNametxt.TabIndex = 45;
+            this.spouseNametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // pred
             // 
@@ -108,43 +134,13 @@
             this.pred.Zoom = 10;
             this.pred.Click += new System.EventHandler(this.pred_Click);
             // 
-            // bunifuMaterialTextbox1
+            // spouseschedule
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox1.HintText = "Partner Name";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(23, 63);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(318, 44);
-            this.bunifuMaterialTextbox1.TabIndex = 45;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuMaterialTextbox2
-            // 
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox2.HintText = "Job";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox2.LineThickness = 3;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(23, 144);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(318, 44);
-            this.bunifuMaterialTextbox2.TabIndex = 46;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.spouseschedule.Location = new System.Drawing.Point(47, 249);
+            this.spouseschedule.Multiline = true;
+            this.spouseschedule.Name = "spouseschedule";
+            this.spouseschedule.Size = new System.Drawing.Size(262, 116);
+            this.spouseschedule.TabIndex = 47;
             // 
             // SpouseName
             // 
@@ -170,8 +166,8 @@
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuImageButton next;
         private Bunifu.Framework.UI.BunifuImageButton pred;
-        private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox spouseJobTxt;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox spouseNametxt;
+        private System.Windows.Forms.TextBox spouseschedule;
     }
 }

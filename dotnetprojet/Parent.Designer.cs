@@ -32,15 +32,15 @@
             Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Parent));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuProgressBar1 = new Bunifu.Framework.UI.BunifuProgressBar();
+            this.fatherJobTxt = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.fatherNameTxt = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.next = new Bunifu.Framework.UI.BunifuImageButton();
             this.pred = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuProgressBar2 = new Bunifu.Framework.UI.BunifuProgressBar();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.motherJobTxt = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.motherNameTxt = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.fatherScheduleTxt = new System.Windows.Forms.TextBox();
+            this.motherScheduleTxt = new System.Windows.Forms.TextBox();
             bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1.SuspendLayout();
@@ -76,9 +76,9 @@
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.bunifuMaterialTextbox2);
-            this.panel1.Controls.Add(this.bunifuMaterialTextbox1);
-            this.panel1.Controls.Add(this.bunifuProgressBar1);
+            this.panel1.Controls.Add(this.fatherScheduleTxt);
+            this.panel1.Controls.Add(this.fatherJobTxt);
+            this.panel1.Controls.Add(this.fatherNameTxt);
             this.panel1.Controls.Add(bunifuCustomLabel2);
             this.panel1.Location = new System.Drawing.Point(85, 83);
             this.panel1.Name = "panel1";
@@ -86,17 +86,43 @@
             this.panel1.TabIndex = 17;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // bunifuProgressBar1
+            // fatherJobTxt
             // 
-            this.bunifuProgressBar1.BackColor = System.Drawing.Color.Silver;
-            this.bunifuProgressBar1.BorderRadius = 5;
-            this.bunifuProgressBar1.Location = new System.Drawing.Point(56, 280);
-            this.bunifuProgressBar1.MaximumValue = 100;
-            this.bunifuProgressBar1.Name = "bunifuProgressBar1";
-            this.bunifuProgressBar1.ProgressColor = System.Drawing.Color.Teal;
-            this.bunifuProgressBar1.Size = new System.Drawing.Size(250, 116);
-            this.bunifuProgressBar1.TabIndex = 33;
-            this.bunifuProgressBar1.Value = 0;
+            this.fatherJobTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.fatherJobTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.fatherJobTxt.ForeColor = System.Drawing.Color.SeaGreen;
+            this.fatherJobTxt.HintForeColor = System.Drawing.Color.SeaGreen;
+            this.fatherJobTxt.HintText = "Father\'s job";
+            this.fatherJobTxt.isPassword = false;
+            this.fatherJobTxt.LineFocusedColor = System.Drawing.Color.SeaGreen;
+            this.fatherJobTxt.LineIdleColor = System.Drawing.Color.SeaGreen;
+            this.fatherJobTxt.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
+            this.fatherJobTxt.LineThickness = 3;
+            this.fatherJobTxt.Location = new System.Drawing.Point(56, 143);
+            this.fatherJobTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.fatherJobTxt.Name = "fatherJobTxt";
+            this.fatherJobTxt.Size = new System.Drawing.Size(262, 44);
+            this.fatherJobTxt.TabIndex = 35;
+            this.fatherJobTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // fatherNameTxt
+            // 
+            this.fatherNameTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.fatherNameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.fatherNameTxt.ForeColor = System.Drawing.Color.SeaGreen;
+            this.fatherNameTxt.HintForeColor = System.Drawing.Color.SeaGreen;
+            this.fatherNameTxt.HintText = "Father\'s Name";
+            this.fatherNameTxt.isPassword = false;
+            this.fatherNameTxt.LineFocusedColor = System.Drawing.Color.SeaGreen;
+            this.fatherNameTxt.LineIdleColor = System.Drawing.Color.SeaGreen;
+            this.fatherNameTxt.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
+            this.fatherNameTxt.LineThickness = 3;
+            this.fatherNameTxt.Location = new System.Drawing.Point(56, 64);
+            this.fatherNameTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.fatherNameTxt.Name = "fatherNameTxt";
+            this.fatherNameTxt.Size = new System.Drawing.Size(262, 44);
+            this.fatherNameTxt.TabIndex = 34;
+            this.fatherNameTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // next
             // 
@@ -131,102 +157,68 @@
             // panel2
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.Controls.Add(this.bunifuMaterialTextbox3);
-            this.panel2.Controls.Add(this.bunifuMaterialTextbox4);
-            this.panel2.Controls.Add(this.bunifuProgressBar2);
+            this.panel2.Controls.Add(this.motherScheduleTxt);
+            this.panel2.Controls.Add(this.motherJobTxt);
+            this.panel2.Controls.Add(this.motherNameTxt);
             this.panel2.Controls.Add(bunifuCustomLabel1);
             this.panel2.Location = new System.Drawing.Point(479, 83);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(357, 447);
             this.panel2.TabIndex = 18;
             // 
-            // bunifuProgressBar2
+            // motherJobTxt
             // 
-            this.bunifuProgressBar2.BackColor = System.Drawing.Color.Silver;
-            this.bunifuProgressBar2.BorderRadius = 5;
-            this.bunifuProgressBar2.Location = new System.Drawing.Point(56, 280);
-            this.bunifuProgressBar2.MaximumValue = 100;
-            this.bunifuProgressBar2.Name = "bunifuProgressBar2";
-            this.bunifuProgressBar2.ProgressColor = System.Drawing.Color.Teal;
-            this.bunifuProgressBar2.Size = new System.Drawing.Size(250, 116);
-            this.bunifuProgressBar2.TabIndex = 33;
-            this.bunifuProgressBar2.Value = 0;
+            this.motherJobTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.motherJobTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.motherJobTxt.ForeColor = System.Drawing.Color.SeaGreen;
+            this.motherJobTxt.HintForeColor = System.Drawing.Color.SeaGreen;
+            this.motherJobTxt.HintText = "Mother\'s job";
+            this.motherJobTxt.isPassword = false;
+            this.motherJobTxt.LineFocusedColor = System.Drawing.Color.SeaGreen;
+            this.motherJobTxt.LineIdleColor = System.Drawing.Color.SeaGreen;
+            this.motherJobTxt.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
+            this.motherJobTxt.LineThickness = 3;
+            this.motherJobTxt.Location = new System.Drawing.Point(44, 143);
+            this.motherJobTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.motherJobTxt.Name = "motherJobTxt";
+            this.motherJobTxt.Size = new System.Drawing.Size(262, 44);
+            this.motherJobTxt.TabIndex = 37;
+            this.motherJobTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMaterialTextbox1
+            // motherNameTxt
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox1.HintText = "Father\'s Name";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(56, 64);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(262, 44);
-            this.bunifuMaterialTextbox1.TabIndex = 34;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.motherNameTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.motherNameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.motherNameTxt.ForeColor = System.Drawing.Color.SeaGreen;
+            this.motherNameTxt.HintForeColor = System.Drawing.Color.SeaGreen;
+            this.motherNameTxt.HintText = "Mother\'s Name";
+            this.motherNameTxt.isPassword = false;
+            this.motherNameTxt.LineFocusedColor = System.Drawing.Color.SeaGreen;
+            this.motherNameTxt.LineIdleColor = System.Drawing.Color.SeaGreen;
+            this.motherNameTxt.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
+            this.motherNameTxt.LineThickness = 3;
+            this.motherNameTxt.Location = new System.Drawing.Point(44, 64);
+            this.motherNameTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.motherNameTxt.Name = "motherNameTxt";
+            this.motherNameTxt.Size = new System.Drawing.Size(262, 44);
+            this.motherNameTxt.TabIndex = 36;
+            this.motherNameTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuMaterialTextbox2
+            // fatherScheduleTxt
             // 
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox2.HintText = "Father\'s job";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox2.LineThickness = 3;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(56, 143);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(262, 44);
-            this.bunifuMaterialTextbox2.TabIndex = 35;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.fatherScheduleTxt.Location = new System.Drawing.Point(56, 280);
+            this.fatherScheduleTxt.Multiline = true;
+            this.fatherScheduleTxt.Name = "fatherScheduleTxt";
+            this.fatherScheduleTxt.Size = new System.Drawing.Size(262, 116);
+            this.fatherScheduleTxt.TabIndex = 36;
             // 
-            // bunifuMaterialTextbox3
+            // motherScheduleTxt
             // 
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox3.HintText = "Mother\'s job";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox3.LineThickness = 3;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(44, 143);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(262, 44);
-            this.bunifuMaterialTextbox3.TabIndex = 37;
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuMaterialTextbox4
-            // 
-            this.bunifuMaterialTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.bunifuMaterialTextbox4.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox4.HintForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox4.HintText = "Mother\'s Name";
-            this.bunifuMaterialTextbox4.isPassword = false;
-            this.bunifuMaterialTextbox4.LineFocusedColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.SeaGreen;
-            this.bunifuMaterialTextbox4.LineThickness = 3;
-            this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(44, 64);
-            this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
-            this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(262, 44);
-            this.bunifuMaterialTextbox4.TabIndex = 36;
-            this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.motherScheduleTxt.Location = new System.Drawing.Point(44, 280);
+            this.motherScheduleTxt.Multiline = true;
+            this.motherScheduleTxt.Name = "motherScheduleTxt";
+            this.motherScheduleTxt.Size = new System.Drawing.Size(262, 116);
+            this.motherScheduleTxt.TabIndex = 37;
             // 
             // Parent
             // 
@@ -257,11 +249,11 @@
         private Bunifu.Framework.UI.BunifuImageButton next;
         private Bunifu.Framework.UI.BunifuImageButton pred;
         private System.Windows.Forms.Panel panel2;
-        private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar1;
-        private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox4;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox fatherJobTxt;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox fatherNameTxt;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox motherJobTxt;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox motherNameTxt;
+        private System.Windows.Forms.TextBox fatherScheduleTxt;
+        private System.Windows.Forms.TextBox motherScheduleTxt;
     }
 }
